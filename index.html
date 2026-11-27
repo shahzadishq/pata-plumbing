@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pata Plumbing | Plumber & Gasfitter in Lara, VIC | Jessie the Plumber</title>
-<meta name="description" content="Pata Plumbing is Jessie Pata, a local plumber and gasfitter in Lara VIC. Hot water, gas heating, split systems, general plumbing, roofing and drainage across Lara and Geelong. Call 0434 219 957.">
+<meta name="description" content="Pata Plumbing is Jessie Pata, a local plumber and gasfitter in Lara VIC. Hot water, gas heating, split systems, wood heaters, general plumbing, roofing and drainage across Lara and Geelong. Call 0434 219 957.">
 <meta name="theme-color" content="#0C2440">
 <meta property="og:title" content="Pata Plumbing | Jessie the Plumber, Lara VIC">
-<meta property="og:description" content="Treating your home as our own. Hot water, gas, heating & cooling, plumbing, roofing and drainage. 4.8★ on Google.">
+<meta property="og:description" content="Treating your home as our own. Hot water, gas, heating & cooling, plumbing, roofing and drainage. 4.8 stars on Google.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RyQvEBj5hRqq9SgwS-lSjqud9nSADCNKfW2mgEQ-S6Kfw2Q5sYx4K779BGiApL5OrtaygEM_g5rugfPBoHyneIcAAENwNSmxhVaAyE8k254m0BT7JEzNgItpnJdM1160RpJPLJ=w1200">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230C2440' stroke='%235BB8E6' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://shahzadishq.github.io/pata-plumbing/assets/split-indoor.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23fff' stroke='%235BB8E6' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Rockwell,Georgia,serif' font-weight='900' font-size='30' text-anchor='middle' fill='%230C2440'%3EP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +21,13 @@
   "name": "Pata Plumbing",
   "alternateName": "Jessie the Plumber",
   "slogan": "Treating your home as our own",
+  "image": "https://shahzadishq.github.io/pata-plumbing/assets/split-indoor.jpg",
+  "logo": "https://shahzadishq.github.io/pata-plumbing/assets/logo.png",
   "telephone": "+61434219957",
   "email": "pataplumbing@gmail.com",
   "address": {"@type": "PostalAddress", "addressLocality": "Lara", "addressRegion": "VIC", "addressCountry": "AU"},
   "geo": {"@type": "GeoCoordinates", "latitude": -38.008871, "longitude": 144.448352},
-  "areaServed": ["Lara", "Geelong", "Corio", "Little River", "Werribee"],
+  "areaServed": ["Lara", "Geelong"],
   "openingHoursSpecification": [
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00"},
     {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:00"}
@@ -34,15 +36,16 @@
   "sameAs": ["https://www.instagram.com/pataplumbing/", "https://www.facebook.com/pataplumbing/", "https://maps.app.goo.gl/o8xErtH1esT9ddGK6"]
 }
 </script>
+<script type="application/ld+json" id="faq-schema"></script>
 <style>
 :root{
   --navy:#0C2440;
   --navy-2:#123257;
+  --navy-3:#081B31;
   --sky:#5BB8E6;
   --sky-soft:#CFEAF7;
   --tag:#F4C430;
   --paper:#F3F7FA;
-  --steel:#8FA3B5;
   --line:#D6E1EA;
   --text:#14304F;
   --muted:#4E6A84;
@@ -53,45 +56,45 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
+.ico{width:20px;height:20px;flex:none}
 :focus-visible{outline:3px solid var(--tag);outline-offset:3px;border-radius:4px}
 .wrap{width:var(--wrap);margin-inline:auto}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* ---------- header ---------- */
 .top{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s}
-.top.solid{background:rgba(12,36,64,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.brand-mark{width:44px;height:44px;border-radius:50%;border:3px solid var(--sky);display:grid;place-items:center;font:900 22px/1 var(--display);background:var(--navy)}
-.brand-name{font:900 25px/0.9 var(--display);letter-spacing:.02em}
-.brand-name small{display:block;font:500 13px/1.3 var(--body);letter-spacing:0;color:var(--sky-soft);opacity:.85}
+.top.solid{background:rgba(12,36,64,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo-chip{display:inline-flex;align-items:center;background:#fff;border-radius:12px;padding:8px 14px;box-shadow:0 6px 20px -10px rgba(0,0,0,.5);text-decoration:none}
+.logo-chip img{height:40px;width:auto}
 .nav{display:flex;align-items:center;gap:30px}
 .nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;opacity:.82;transition:opacity .2s}
 .nav a:hover{opacity:1}
 .nav .call{opacity:1}
-.btn{display:inline-flex;align-items:center;gap:10px;font:700 16px/1 var(--body);text-decoration:none;padding:16px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
-.btn svg{width:18px;height:18px;flex:none}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 16px/1 var(--body);text-decoration:none;padding:16px 24px;border-radius:999px;border:0;cursor:pointer;white-space:nowrap;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn .ico{width:18px;height:18px}
 .btn-tag{background:var(--tag);color:var(--navy);box-shadow:0 10px 30px -10px rgba(244,196,48,.6)}
 .btn-tag:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(244,196,48,.75)}
 .btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
 .btn-ghost:hover{box-shadow:inset 0 0 0 2px #fff}
-.nav .btn{padding:12px 18px;font-size:15px;white-space:nowrap}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{transform:translateY(-2px);background:var(--navy-2)}
+.nav .btn{padding:12px 18px;font-size:15px}
 .nav .short{display:none}
-@media (max-width:480px){.nav .num{display:none}.nav .short{display:inline}.brand-name{font-size:22px}}
-@media (max-width:860px){.nav a:not(.call){display:none}}
+@media (max-width:900px){.nav a:not(.call){display:none}}
+@media (max-width:480px){.nav .num{display:none}.nav .short{display:inline}.logo-chip img{height:30px}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:100svh;background:var(--navy);color:#fff;overflow:hidden;display:flex;align-items:center;padding:120px 0 80px}
+.hero{position:relative;min-height:100svh;background:var(--navy);color:#fff;overflow:hidden;display:flex;align-items:center;padding:130px 0 80px}
 .hero::before{content:"";position:absolute;inset:0;background:
   radial-gradient(60% 70% at 78% 45%, rgba(91,184,230,.20), transparent 70%),
   linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px) 0 0/48px 48px,
   linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px) 0 0/48px 48px;}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 .hero-copy{position:relative;z-index:2}
-.hero h1{font:900 clamp(58px,8.6vw,124px)/.86 var(--display);letter-spacing:-.005em;text-transform:none}
+.hero h1{font:900 clamp(58px,8.6vw,124px)/.86 var(--display);letter-spacing:-.005em}
 .hero h1 .ln{display:block;overflow:hidden}
 .hero h1 .ln span{display:block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
 .hero h1 .ln:nth-child(2) span{animation-delay:.12s}
@@ -100,6 +103,8 @@ a{color:inherit}
 .hero p.lead{max-width:30em;margin:28px 0 36px;font-size:19px;line-height:1.55;color:#D5E4F0;opacity:0;animation:fade .9s .55s forwards}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px;opacity:0;animation:fade .9s .7s forwards}
 .hero .meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;font-size:15px;color:#B9CDDE;opacity:0;animation:fade .9s .85s forwards}
+.hero .meta span{display:inline-flex;align-items:center;gap:8px}
+.hero .meta .ico{width:17px;height:17px;color:var(--sky)}
 .hero .meta b{color:#fff;font-weight:600}
 @keyframes fade{to{opacity:1}}
 
@@ -128,13 +133,13 @@ a{color:inherit}
 .drip{fill:var(--sky);opacity:0;animation:drip 2.6s ease-in 3s infinite}
 @keyframes drip{0%{opacity:0;transform:translateY(0) scale(.4)}15%{opacity:1;transform:translateY(0) scale(1)}70%{opacity:1;transform:translateY(70px)}100%{opacity:0;transform:translateY(90px)}}
 
+
 .scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);width:26px;height:42px;border:2px solid rgba(255,255,255,.4);border-radius:14px}
 .scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--sky);animation:cue 1.8s infinite}
 @keyframes cue{0%{transform:translateY(0);opacity:1}80%{transform:translateY(14px);opacity:0}100%{opacity:0}}
-
 @media (max-width:960px){
   .hero .wrap{grid-template-columns:1fr}
-  .rig{max-width:420px;justify-self:center;margin-top:10px;order:2}
+  .rig{max-width:420px;justify-self:center;margin-top:10px}
 }
 
 /* ---------- strip ---------- */
@@ -143,97 +148,184 @@ a{color:inherit}
 .strip-track span::after{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--navy);margin-left:46px;vertical-align:middle}
 @keyframes marq{to{transform:translateX(-50%)}}
 
-/* ---------- sections ---------- */
-section{position:relative}
+/* ---------- shared ---------- */
+section{scroll-margin-top:70px}
 .sec{padding:clamp(80px,11vw,140px) 0}
 .h2{font:900 clamp(44px,6vw,84px)/.9 var(--display);color:var(--navy)}
 .intro{max-width:34em;color:var(--muted);font-size:18px;margin-top:20px}
+.head-row{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
 
-/* services manifold */
-.services .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
-.services-head{position:sticky;top:120px}
-.manifold{position:relative;padding-left:74px}
-.main-pipe{position:absolute;left:18px;top:0;bottom:0;width:18px;border-radius:9px;background:#DCE6EE;box-shadow:inset 0 0 0 2px #C7D5E1;overflow:hidden}
-.main-pipe i{position:absolute;inset:0 0 auto;height:0;background:linear-gradient(var(--sky),#3A9ED3);border-radius:9px}
-.svc{position:relative;padding:30px 0 34px;border-bottom:1px solid var(--line)}
-.svc:last-child{border-bottom:0}
-.svc .branch{position:absolute;left:-56px;top:46px;width:44px;height:12px;border-radius:0 6px 6px 0;background:#DCE6EE;box-shadow:inset 0 0 0 2px #C7D5E1;overflow:hidden}
-.svc .branch::after{content:"";position:absolute;inset:0;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.svc .tap{position:absolute;left:-30px;top:40px;width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid #C7D5E1;transition:border-color .4s,background .4s}
-.svc.on .branch::after{transform:none}
-.svc.on .tap{border-color:var(--sky);background:var(--sky-soft)}
-.svc h3{font:800 clamp(30px,3.2vw,40px)/1 var(--display);color:var(--navy)}
-.svc p{margin-top:12px;color:var(--muted);max-width:36em}
-.svc ul{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;list-style:none}
-.svc li{font-size:14px;font-weight:600;padding:6px 12px;border-radius:6px;background:#E6EEF4;color:var(--navy-2)}
-@media (max-width:900px){
-  .services .wrap{grid-template-columns:1fr;gap:36px}
-  .services-head{position:static}
-  .manifold{padding-left:58px}
-  .main-pipe{left:10px;width:14px}
-  .svc .branch{left:-48px;width:34px}.svc .tap{left:-26px}
+/* ---------- services bento ---------- */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(250px,auto);gap:16px}
+.tile{position:relative;overflow:hidden;border-radius:20px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;min-height:250px}
+.tile h3{font:800 clamp(30px,2.8vw,40px)/.95 var(--display)}
+.tile p{margin-top:10px;font-size:16px;line-height:1.5;max-width:32em}
+.tile ul{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;list-style:none}
+.tile li{font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px}
+.tile .tile-ico{position:absolute;top:26px;left:28px;width:54px;height:54px}
+.tile .tile-ico svg{width:100%;height:100%}
+.t-photo{color:#fff}
+.t-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.1s var(--ease)}
+.t-photo::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,27,49,0) 25%,rgba(8,27,49,.55) 55%,rgba(8,27,49,.92) 100%)}
+.t-photo p{color:#DCE8F2}
+.t-photo li{background:rgba(255,255,255,.16);backdrop-filter:blur(6px);color:#fff}
+.t-photo:hover img{transform:scale(1.06)}
+.t-yellow{background:var(--tag);color:var(--navy)}
+.t-yellow li{background:rgba(12,36,64,.1)}
+.t-white{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1px var(--line)}
+.t-white p{color:var(--muted)}
+.t-white li{background:#E6EEF4;color:var(--navy-2)}
+.t-navy{background:var(--navy-2);color:#fff}
+.t-navy p{color:#C9DAE8}
+.t-navy li{background:rgba(255,255,255,.1)}
+.t-hc{grid-column:span 2;grid-row:span 2}
+.t-gas{grid-row:span 2}
+.t-gp{grid-column:span 2}
+.t-rd{grid-column:span 2}
+.tile .ico-anim{transition:transform .6s var(--ease)}
+.tile:hover .ico-anim{transform:rotate(-12deg) scale(1.06)}
+@media (max-width:980px){
+  .bento{grid-template-columns:1fr 1fr}
+  .t-hc,.t-gp,.t-rd{grid-column:span 2}
+  .t-hc{grid-row:span 1;min-height:380px}
+  .t-gas{grid-row:span 2}
+}
+@media (max-width:600px){
+  .bento{grid-template-columns:1fr}
+  .t-hc,.t-gp,.t-rd,.t-gas{grid-column:auto;grid-row:auto}
+  .t-photo{min-height:360px}
 }
 
-/* work gallery */
-.work{background:var(--navy);color:#fff;overflow:hidden}
+/* ---------- how we work (pipe manifold) ---------- */
+.how{background:#fff}
+.how .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.how-head{position:sticky;top:130px}
+.manifold{position:relative;padding-left:84px}
+.main-pipe{position:absolute;left:18px;top:0;bottom:0;width:18px;border-radius:9px;background:#DCE6EE;box-shadow:inset 0 0 0 2px #C7D5E1;overflow:hidden}
+.main-pipe i{position:absolute;inset:0 0 auto;height:0;background:linear-gradient(var(--sky),#3A9ED3);border-radius:9px}
+.step{position:relative;padding:30px 0 40px;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:0}
+.step .branch{position:absolute;left:-66px;top:50px;width:40px;height:12px;border-radius:0 6px 6px 0;background:#DCE6EE;box-shadow:inset 0 0 0 2px #C7D5E1;overflow:hidden}
+.step .branch::after{content:"";position:absolute;inset:0;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.step .tap{position:absolute;left:-36px;top:36px;width:40px;height:40px;border-radius:50%;background:#fff;border:3px solid #C7D5E1;display:grid;place-items:center;font:800 20px/1 var(--display);color:#9AB0C3;transition:border-color .4s,background .4s,color .4s}
+.step.on .branch::after{transform:none}
+.step.on .tap{border-color:var(--sky);background:var(--navy);color:#fff}
+.step h3{font:800 clamp(30px,3.2vw,40px)/1 var(--display);color:var(--navy);padding-left:20px}
+.step p{margin-top:12px;color:var(--muted);max-width:34em;padding-left:20px}
+@media (max-width:900px){
+  .how .wrap{grid-template-columns:1fr;gap:36px}
+  .how-head{position:static}
+  .manifold{padding-left:62px}
+  .main-pipe{left:10px;width:14px}
+  .step .branch{left:-52px;width:30px}
+  .step .tap{left:-30px;width:36px;height:36px;font-size:18px}
+  .step h3,.step p{padding-left:14px}
+}
+
+/* ---------- recent jobs: scroll-linked sideways track ---------- */
+.work{position:relative;background:var(--navy);color:#fff}
 .work .h2{color:#fff}
 .work .intro{color:#B9CDDE}
-.work-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
-.rail-ctrl{display:flex;gap:10px}
-.rail-ctrl button{width:54px;height:54px;border-radius:50%;border:2px solid rgba(255,255,255,.3);background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:border-color .2s,background .2s}
-.rail-ctrl button:hover{border-color:var(--sky);background:rgba(91,184,230,.12)}
-.rail-ctrl svg{width:20px;height:20px}
-.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:50px max(24px,(100vw - 1180px)/2) 10px;scrollbar-width:none}
-.rail::-webkit-scrollbar{display:none}
-.shot{flex:0 0 clamp(270px,30vw,380px);scroll-snap-align:start;margin:0}
-.shot .ph{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--navy-2)}
-.shot img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
-.shot:hover img{transform:scale(1.05)}
-.shot figcaption{margin-top:14px;font-size:15px;color:#C9DAE8}
+.work-pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:60px}
+.work-pin .head-row{margin-bottom:36px}
+.track{display:flex;gap:22px;padding-left:max(24px,(100vw - 1180px)/2);padding-right:max(24px,(100vw - 1180px)/2);will-change:transform;width:max-content}
+.shot{margin:0;flex:none}
+.shot .ph{height:clamp(240px,48vh,470px);border-radius:16px;overflow:hidden;background:var(--navy-2)}
+.shot img{height:100%;width:auto;max-width:none;transition:transform .8s var(--ease)}
+.shot:hover img{transform:scale(1.04)}
+.shot figcaption{margin-top:14px;font-size:15px;color:#C9DAE8;max-width:30ch}
 .shot figcaption b{display:block;font:800 24px/1.05 var(--display);color:#fff;margin-bottom:4px}
+.work-progress{width:var(--wrap);margin:34px auto 0;height:4px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden}
+.work-progress i{display:block;height:100%;width:0;background:var(--tag)}
+.work.static .work-pin{position:relative;height:auto;padding:110px 0}
+.work.static .track{overflow-x:auto;width:auto;scroll-snap-type:x mandatory}
+.work.static .shot{scroll-snap-align:start}
+@media (max-width:700px){.shot .ph{height:clamp(220px,42vh,360px)}}
 
-/* reviews */
-.reviews .wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}
-.score{display:flex;align-items:baseline;gap:14px;margin-top:30px}
-.score b{font:900 120px/.8 var(--display);color:var(--navy)}
-.score span{color:var(--muted);font-size:16px;line-height:1.4}
-.stars{display:flex;gap:4px;margin-top:16px;color:var(--tag)}
-.stars svg{width:24px;height:24px}
-.g-link{display:inline-block;margin-top:24px;font-weight:600;color:var(--navy-2)}
-.quote-stage{position:relative;min-height:340px}
-.quote{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s var(--ease);pointer-events:none}
-.quote.active{opacity:1;transform:none;pointer-events:auto}
-.quote blockquote{font:600 clamp(26px,2.9vw,38px)/1.18 var(--body);color:var(--navy);letter-spacing:-.01em}
-.quote blockquote::before{content:"\201C";display:block;font:900 110px/.6 var(--display);color:var(--sky);margin-bottom:14px}
-.quote cite{display:block;margin-top:26px;font-style:normal;color:var(--muted)}
-.quote cite b{color:var(--navy);font-weight:700}
-.dots{display:flex;gap:10px;margin-top:24px}
-.dots button{width:34px;height:6px;border-radius:3px;border:0;background:var(--line);cursor:pointer;transition:background .3s,width .3s}
-.dots button[aria-current="true"]{background:var(--navy);width:56px}
-@media (max-width:900px){.reviews .wrap{grid-template-columns:1fr;gap:40px}.quote-stage{min-height:400px}}
+/* ---------- reviews ---------- */
+.reviews{overflow:hidden}
+.rev-top{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
+.rating-card{background:var(--navy);color:#fff;border-radius:22px;padding:32px 34px;position:relative;overflow:hidden}
+.rating-card::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(91,184,230,.35),transparent 70%)}
+.rc-top{display:flex;align-items:center;gap:20px}
+.rc-score{font:900 96px/.8 var(--display);color:var(--tag)}
+.rc-meta{font-size:15px;color:#C9DAE8}
+.rc-meta .stars{margin-bottom:6px}
+.g-badge{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#fff}
+.g-badge .ico{width:18px;height:18px}
+.stars{display:flex;gap:3px;color:var(--tag)}
+.stars svg{width:20px;height:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12)}
+.chips span{font-size:14px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.08);color:#E3EEF6}
+.chips b{color:var(--sky);font-weight:700;margin-left:4px}
+.rc-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:#fff;font-weight:600;text-decoration:none;border-bottom:2px solid var(--sky);padding-bottom:2px}
+.lanes{margin-top:70px;display:grid;gap:18px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.lane{display:flex;gap:18px;width:max-content;animation:lane 70s linear infinite}
+.lane.rev{animation-direction:reverse;animation-duration:80s}
+.lanes:hover .lane{animation-play-state:paused}
+@keyframes lane{to{transform:translateX(-50%)}}
+.rcard{width:380px;flex:none;background:#fff;border-radius:18px;padding:24px 26px;box-shadow:0 1px 0 var(--line),0 18px 40px -28px rgba(12,36,64,.45)}
+.rcard header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font:800 19px/1 var(--display);color:#fff;flex:none}
+.rcard .who{font-weight:700;color:var(--navy);line-height:1.2}
+.rcard .who small{display:flex;align-items:center;gap:5px;font-weight:500;color:var(--muted);font-size:13px;margin-top:3px}
+.rcard .who small .ico{width:13px;height:13px}
+.rcard .stars svg{width:16px;height:16px}
+.rcard p{margin-top:10px;font-size:15.5px;line-height:1.55;color:#2B4663}
+@media (max-width:900px){.rev-top{grid-template-columns:1fr;gap:36px}.rcard{width:310px}}
 
-/* about */
+/* ---------- about ---------- */
 .about{background:#fff}
-.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.about-ph{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:5/6}
-.about-ph img{width:100%;height:100%;object-fit:cover;object-position:30% 60%}
-.about-ph .badge{position:absolute;left:20px;bottom:20px;background:var(--tag);color:var(--navy);font:800 22px/1.05 var(--display);padding:14px 18px;border-radius:10px;max-width:220px}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about-ph{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;max-width:500px}
+.about-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.about-ph .badge{position:absolute;left:18px;bottom:18px;right:18px;display:flex;align-items:center;gap:14px;background:rgba(12,36,64,.86);backdrop-filter:blur(8px);color:#fff;padding:14px 16px;border-radius:14px}
+.about-ph .badge img{width:auto;height:30px;background:#fff;border-radius:8px;padding:4px 8px;flex:none}
+.about-ph .badge span{font-size:14px;line-height:1.35;color:#D5E4F0}
+.about-ph .badge b{display:block;color:#fff;font-size:15px}
 .about p{margin-top:20px;color:var(--muted);max-width:33em}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:26px 30px;margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:24px 30px;margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.facts div{display:flex;gap:12px;align-items:flex-start}
+.facts .ico{width:22px;height:22px;color:var(--sky);margin-top:4px}
 .facts dt{font-size:14px;color:var(--muted)}
-.facts dd{font:800 26px/1.1 var(--display);color:var(--navy);margin-top:4px}
-@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:40px}.about-ph{aspect-ratio:4/3}}
+.facts dd{font:800 24px/1.1 var(--display);color:var(--navy);margin-top:2px}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:40px}.about-ph{max-width:none;aspect-ratio:4/4.4}}
 
-/* contact */
+/* ---------- FAQ ---------- */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.faq-head{position:sticky;top:130px}
+.faq-head .btn{margin-top:30px}
+.qa{border-bottom:1px solid var(--line)}
+.qa:first-child{border-top:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font:800 clamp(24px,2.4vw,30px)/1.1 var(--display);color:var(--navy)}
+.qa summary::-webkit-details-marker{display:none}
+.qa .pm{position:relative;width:38px;height:38px;border-radius:50%;flex:none;background:#E6EEF4;transition:background .3s,transform .4s var(--ease)}
+.qa .pm::before,.qa .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2.5px;margin:-1.25px 0 0 -7px;background:var(--navy);border-radius:2px;transition:transform .4s var(--ease),background .3s}
+.qa .pm::after{transform:rotate(90deg)}
+.qa[open] .pm{background:var(--navy);transform:rotate(180deg)}
+.qa[open] .pm::before{background:#fff}
+.qa[open] .pm::after{transform:rotate(0);background:#fff}
+.qa .ans{padding:0 60px 28px 0;color:var(--muted);max-width:40em;animation:ans .45s var(--ease)}
+@keyframes ans{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width:900px){.faq .wrap{grid-template-columns:1fr;gap:40px}.faq-head{position:static}.qa .ans{padding-right:0}}
+
+/* ---------- contact ---------- */
 .contact{background:var(--navy);color:#fff}
 .contact .h2{color:#fff}
 .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px}
-.big-phone{display:inline-block;margin-top:34px;font:900 clamp(48px,6.4vw,92px)/.9 var(--display);color:var(--tag);text-decoration:none;transition:color .2s}
+.big-phone{white-space:nowrap;display:inline-flex;align-items:center;gap:16px;margin-top:34px;font:900 clamp(44px,5.4vw,80px)/.9 var(--display);color:var(--tag);text-decoration:none;transition:color .2s}
+.big-phone .ico{width:.6em;height:.6em}
 .big-phone:hover{color:#fff}
-.c-list{list-style:none;margin-top:36px;display:grid;gap:18px;color:#C9DAE8}
+.c-list{list-style:none;margin-top:38px;display:grid;gap:20px;color:#C9DAE8}
+.c-list li{display:flex;gap:16px;align-items:flex-start}
+.c-ico{width:46px;height:46px;border-radius:12px;background:rgba(91,184,230,.14);color:var(--sky);display:grid;place-items:center;flex:none}
+.c-ico .ico{width:22px;height:22px}
 .c-list b{display:block;color:#fff;font-weight:600}
 .c-list a{color:#fff}
-form{background:#fff;color:var(--text);border-radius:18px;padding:clamp(24px,3.4vw,40px);display:grid;gap:18px}
+.socials{display:flex;gap:10px;margin-top:34px}
+.socials a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25);transition:background .25s,box-shadow .25s,color .25s,transform .25s var(--ease)}
+.socials a:hover{background:var(--sky);color:var(--navy);box-shadow:none;transform:translateY(-2px)}
+form{background:#fff;color:var(--text);border-radius:22px;padding:clamp(24px,3.4vw,40px);display:grid;gap:18px;align-self:start}
 form h3{font:800 34px/1 var(--display);color:var(--navy)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 label{display:grid;gap:7px;font-size:14px;font-weight:600;color:var(--navy-2)}
@@ -245,18 +337,27 @@ form .btn{justify-self:start}
 @media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:50px}}
 @media (max-width:520px){.row{grid-template-columns:1fr}}
 
-footer{background:#081B31;color:#8FA9C0;font-size:14px;padding:34px 0 100px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer a{color:#C9DAE8;text-decoration:none;margin-left:18px}
-footer a:hover{color:#fff}
+/* ---------- footer ---------- */
+footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+.foot-grid .logo-chip img{height:40px}
+.foot-grid p{margin-top:18px;max-width:28em}
+.foot-grid h4{font:800 22px/1 var(--display);color:#fff;margin-bottom:16px}
+.foot-grid ul{list-style:none;display:grid;gap:10px}
+.foot-grid li{display:flex;gap:10px;align-items:center}
+.foot-grid li .ico{width:17px;height:17px;color:var(--sky)}
+.foot-grid a{color:#C9DAE8;text-decoration:none}
+.foot-grid a:hover{color:#fff}
+.foot-grid .socials{margin-top:22px}
+.foot-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:14px}
+@media (max-width:860px){.foot-grid{grid-template-columns:1fr}footer{padding-bottom:110px}}
 
 /* mobile call bar */
 .callbar{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:none;transform:translateY(140%);transition:transform .45s var(--ease)}
 .callbar.show{transform:none}
 .callbar .btn{width:100%;justify-content:center;padding:18px}
-@media (max-width:760px){.callbar{display:block}footer{padding-bottom:110px}}
+@media (max-width:760px){.callbar{display:block}}
 
-/* reveal on scroll (one gentle treatment, used sparingly) */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
 
@@ -265,23 +366,35 @@ footer a:hover{color:#fff}
   .hero h1 .ln span,.hero p.lead,.hero .ctas,.hero .meta{transform:none;opacity:1}
   .flow{opacity:.95}
   .rv{opacity:1;transform:none}
+  .lanes{-webkit-mask:none;mask:none;overflow-x:auto}
+  .lane .dup{display:none!important}.lane{animation:none!important}
 }
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.5s7-6 7-11.5a7 7 0 1 0-14 0c0 5.5 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2L6.4 14zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10c.8-2.3 3-4.1 5.6-4.1z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+</svg>
+
 <header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="#main" aria-label="Pata Plumbing home">
-      <span class="brand-mark" aria-hidden="true">P</span>
-      <span class="brand-name">Pata Plumbing<small>Jessie the Plumber</small></span>
-    </a>
+    <a class="logo-chip" href="#main" aria-label="Pata Plumbing home"><img src="assets/logo.png" alt="Pata Plumbing" width="101" height="36"></a>
     <nav class="nav" aria-label="Main">
       <a href="#services">Services</a>
-      <a href="#work">Our work</a>
+      <a href="#how">How we work</a>
+      <a href="#work">Recent jobs</a>
       <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-      <a class="btn btn-tag call" href="tel:+61434219957"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span class="num">0434 219 957</span><span class="short">Call</span></a>
+      <a href="#faq">FAQs</a>
+      <a class="btn btn-tag call" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">0434 219 957</span><span class="short">Call</span></a>
     </nav>
   </div>
 </header>
@@ -297,15 +410,14 @@ footer a:hover{color:#fff}
       </h1>
       <p class="lead">Pata Plumbing is Jessie Pata, a Lara local who handles hot water, gas heating, split systems, everyday plumbing, roofing and drainage across Lara and Geelong. You call Jessie, Jessie turns up.</p>
       <div class="ctas">
-        <a class="btn btn-tag" href="tel:+61434219957"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call Jessie</a>
+        <a class="btn btn-tag" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Call Jessie</a>
         <a class="btn btn-ghost" href="#contact">Ask for a quote</a>
       </div>
       <div class="meta">
-        <span><b>4.8 stars</b> from 18 Google reviews</span>
-        <span><b>Mon–Fri</b> 9am–5pm, <b>Sat</b> 9am–12pm</span>
+        <span><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg><b>4.8 stars</b> from 18 Google reviews</span>
+        <span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><b>Mon–Fri</b> 9am–5pm, <b>Sat</b> 9am–12pm</span>
       </div>
     </div>
-
     <div class="rig" aria-hidden="true">
       <svg viewBox="0 0 600 600">
         <defs>
@@ -375,6 +487,7 @@ footer a:hover{color:#fff}
       </svg>
     </div>
   </div>
+  </div>
   <span class="scroll-cue" aria-hidden="true"></span>
 </section>
 
@@ -385,138 +498,187 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
+<!-- SERVICES -->
 <section class="sec services" id="services" aria-labelledby="svc-title">
   <div class="wrap">
-    <div class="services-head">
-      <h2 class="h2" id="svc-title">One plumber for the whole house</h2>
-      <p class="intro">From the hot water unit outside to the heater in the roof, Jessie looks after the lot. No job too big or too small, and you get a clear quote before work starts.</p>
+    <div class="head-row">
+      <div>
+        <h2 class="h2" id="svc-title">One plumber for the whole house</h2>
+        <p class="intro">From the hot water unit outside to the heater in the roof, Jessie looks after the lot. No job too big or too small.</p>
+      </div>
+      <a class="btn btn-navy" href="#contact">Get a quote</a>
     </div>
-    <div class="manifold" id="manifold">
-      <div class="main-pipe" aria-hidden="true"><i id="water"></i></div>
 
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
-        <h3>Hot water</h3>
-        <p>Gas and electric hot water services replaced, repaired and relocated, often at short notice when you've been hit with a cold shower.</p>
-        <ul><li>Gas hot water</li><li>Electric hot water</li><li>Replacements</li><li>Repairs</li></ul>
-      </article>
-
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
+    <div class="bento">
+      <article class="tile t-photo t-hc rv">
+        <img src="assets/split-indoor.jpg" alt="Fujitsu split system installed on a living room wall" loading="lazy">
         <h3>Heating & cooling</h3>
         <p>Split systems supplied and installed neatly, ducted gas heating serviced, and central heating fixes that can save you replacing the whole unit.</p>
-        <ul><li>Split systems</li><li>Ducted heating</li><li>Fan change-overs</li><li>Heater servicing</li></ul>
+        <ul><li>Split systems</li><li>Ducted heating</li><li>Fan change-overs</li><li>Heater repairs</li></ul>
       </article>
 
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
-        <h3>Gas fitting</h3>
-        <p>Gas appliances connected, serviced and safety-checked, from gas log fires and space heaters to cooktops in an outdoor kitchen.</p>
-        <ul><li>Appliance installs</li><li>Gas servicing</li><li>Gas heaters</li><li>Outdoor kitchens</li></ul>
+      <article class="tile t-photo t-gas rv">
+        <img src="assets/gas-heater-service.jpg" alt="Gas heater opened up for a service in a roof space" loading="lazy" style="object-position:50% 70%">
+        <h3>Gas fitting & servicing</h3>
+        <p>Gas heaters, cooktops and appliances connected, serviced and safety-checked.</p>
+        <ul><li>Gas servicing</li><li>Appliance installs</li><li>Outdoor kitchens</li></ul>
       </article>
 
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
+      <article class="tile t-yellow rv">
+        <span class="tile-ico ico-anim" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M24 5s13 13.6 13 23.5a13 13 0 0 1-26 0C11 18.6 24 5 24 5z"/><path d="M18 30a6 6 0 0 0 6 6" stroke-linecap="round"/></svg></span>
+        <h3>Hot water</h3>
+        <p>Hot water services replaced and repaired, often at short notice.</p>
+      </article>
+
+      <article class="tile t-photo rv">
+        <img src="assets/wood-heater.jpg" alt="Cast iron wood heater installed against a brick wall" loading="lazy">
         <h3>Wood heaters</h3>
-        <p>Wood fire heaters installed with the flue done properly, and chimneys swept before winter so they draw clean.</p>
-        <ul><li>Wood heater installs</li><li>Flues</li><li>Chimney sweeps</li></ul>
+        <p>Installs, flues, fan change-overs and chimney sweeps.</p>
       </article>
 
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
+      <article class="tile t-white t-gp rv">
+        <span class="tile-ico ico-anim" aria-hidden="true" style="color:var(--sky)"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M29.5 12.5a8 8 0 0 0-10.8 10.8L7 35l6 6 11.7-11.7a8 8 0 0 0 10.8-10.8l-5 5-4.8-1.2-1.2-4.8z"/></svg></span>
         <h3>General plumbing</h3>
-        <p>Leaking taps, running toilets, new basins and dishwashers. The everyday jobs that need someone who answers the phone.</p>
+        <p>Leaking taps, running toilets, new basins and dishwasher installs. The everyday jobs that need someone who answers the phone.</p>
         <ul><li>Taps</li><li>Toilets</li><li>Basins</li><li>Dishwashers</li><li>Maintenance</li></ul>
       </article>
 
-      <article class="svc">
-        <span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true"></span>
+      <article class="tile t-navy t-rd rv">
+        <span class="tile-ico ico-anim" aria-hidden="true" style="color:var(--sky)"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22L24 7l19 15"/><path d="M10 19v21h28V19"/><path d="M40 24h4v8"/><path d="M44 36v3"/></svg></span>
         <h3>Roofing & drainage</h3>
-        <p>Gutters cleaned and repaired, flashings replaced and stormwater drains cleared so water ends up where it should.</p>
+        <p>Gutters cleaned and repaired, flashings replaced, and stormwater drains cleared so water ends up where it should.</p>
         <ul><li>Gutter cleaning</li><li>Flashings</li><li>Roof repairs</li><li>Drainage</li></ul>
       </article>
     </div>
   </div>
 </section>
 
-<section class="sec work" id="work" aria-labelledby="work-title">
-  <div class="wrap work-head">
-    <div>
-      <h2 class="h2" id="work-title">Recent jobs</h2>
-      <p class="intro">Photos from jobs around Lara and Geelong. Neat installs, tidy roof spaces, and nothing left behind.</p>
-    </div>
-    <div class="rail-ctrl">
-      <button type="button" id="prev" aria-label="Previous photos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button type="button" id="next" aria-label="Next photos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
-    </div>
-  </div>
-  <div class="rail" id="rail" tabindex="0" aria-label="Job photos, scroll sideways">
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:20% 50%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHclPVckte0ik6ZKiYiUV1zt4KeJKGrVYNMTl7zyCKpnW2nRmm7hwUxx6WPX20lfHNjPHcUPMypxkTXI_cswOXaAxIrK-zYUAoXJWE5RQDoq-YONIn4lViene7_dPkhMukuPp4LQ=w900" alt="Brivis ducted gas heater installed in a roof space"></div><figcaption><b>Ducted gas heating</b>Brivis unit in the roof, ducting tidied and sealed.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 70%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgYlPsI7aTHnq3Y-j60z5sgz6vzvA-nPI14HsXjhp97pNHD1GNBQNl1x1dnrHVtomxw_W8GyJjdr9DBZ3gpVioBf10NCayTSpVjOgypQCC7wtfaj_9PkyKoq_w5ZT2RXz70Zd-=w900" alt="Split system outdoor unit mounted beside a brick house"></div><figcaption><b>Split system install</b>Outdoor unit on a level pad with the pipework run clean.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 30%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qi0SrzuLIlcGrY6UYttSUjwAWH6tPMqwqbVH4cQ2pvCgGWwc9loUffi1fK9uRWo7tV3_HLNf8EpNzwftx2WRCzyEv2ajCQ-0wvi6lvu0m1296fJxa1dTeIx9IXj7mKTwqEYxAU=w900" alt="Split system indoor unit mounted on a living room wall"></div><figcaption><b>Living room split</b>Indoor head placed for even airflow across the room.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 50%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RyQvEBj5hRqq9SgwS-lSjqud9nSADCNKfW2mgEQ-S6Kfw2Q5sYx4K779BGiApL5OrtaygEM_g5rugfPBoHyneIcAAENwNSmxhVaAyE8k254m0BT7JEzNgItpnJdM1160RpJPLJ=w900" alt="Hot water service enclosure on a concrete path"></div><figcaption><b>Hot water service</b>New unit fitted and enclosed outside.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 100%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXJORVX50V2XqtIW7GG7hZP2sURBtFDcJ3_oR6BznfphKFKBDlOJ5wX9Ux2qrHHiNvpN1we9842fXIPEm_dUYG7D-mToOBU8Asx8dCd_V3l6rLirAa0P6AedsNZY1s6QOScwAq=w900" alt="Cast iron wood heater installed against a brick wall with a steel flue"></div><figcaption><b>Wood heater</b>Installed with a new flue, ready for winter.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 100%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QlYxircHoyFpBmckgbd6whoCLeMRt9mTMctJ2CW2ha-Gjaj65qN29FYAIHg-YYHc7BS-fZBjnF3_Su7yK3YpW8Rp59POvMdCwqzNR6WZdNdLKVB2d4UmzjzWIl1ilgjUB3bsNCwA=w900" alt="Gas heater unit with burner and controls exposed during a service"></div><figcaption><b>Heater service</b>Burner, controls and flue checked and cleaned.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:30% 100%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SB-Ee96E1tXe0Nf9RmC4D0lK2fkIyH9751RFxMDut2ZAvrIJDmPWSgQXVF93ZGAKrlASVwAUXzIyjwvaj3IIh6N6sE7ZqRbJuIlbf1v1pLla3Otkb4Ju1u2maCVTgCuO97jucC=w900" alt="Mitsubishi inverter outdoor unit against a brick wall"></div><figcaption><b>Inverter heat pump</b>Mitsubishi outdoor unit for a whole-room system.</figcaption></figure>
-    <figure class="shot"><div class="ph"><img loading="lazy" style="object-position:50% 85%" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RB3UC6UitILmfDcmJGb5YSFzJFtEUfDVpRPAzLTBFAOrleCDwIX6I26LwrgGhUN1nVjGoYNVAbKP5X5Bc662LrVJUM10lhJgI7aGb0vcc_sc54_zMRtjEznLaYsHD_OvrtV3U=w900" alt="New toilet suite installed in a tiled bathroom"></div><figcaption><b>Bathroom plumbing</b>Toilet suite, taps and basins swapped over.</figcaption></figure>
-  </div>
-</section>
-
-<section class="sec reviews" id="reviews" aria-labelledby="rev-title">
+<!-- HOW WE WORK -->
+<section class="sec how" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <div>
-      <h2 class="h2" id="rev-title">What Lara says about Jessie</h2>
-      <div class="score"><b>4.8</b><span>out of 5<br>from 18 Google reviews</span></div>
-      <div class="stars" aria-label="Rated 4.8 out of 5">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
-      </div>
-      <a class="g-link" href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener">Read all reviews on Google</a>
+    <div class="how-head">
+      <h2 class="h2" id="how-title">How a job with Jessie goes</h2>
+      <p class="intro">The same four steps whether it's a dripping tap or a new heater. You know what's happening, what it costs, and when it'll be done.</p>
     </div>
-    <div>
-      <div class="quote-stage" id="quotes" aria-live="polite">
-        <figure class="quote active"><blockquote>I needed a plumber urgently for my dog grooming business. I was recommended Jessie late Friday afternoon and Jessie came at 7am Saturday morning.</blockquote><cite><b>Lauren S.</b>, Lara</cite></figure>
-        <figure class="quote"><blockquote>None of the other plumbers in Lara would even pick up the phone. Jessie not only answered my call but offered to still come out despite already being fully booked.</blockquote><cite><b>Greg B.</b>, dishwasher install</cite></figure>
-        <figure class="quote"><blockquote>He was able to come up with a great fix for my central heating which saved me having to replace it.</blockquote><cite><b>Phil P.</b>, home and investment property</cite></figure>
-        <figure class="quote"><blockquote>Jessie recently installed a new split system for us. He has done a very neat and tidy job, and kept us informed every step of the way.</blockquote><cite><b>Debbie S.</b>, split system install</cite></figure>
-        <figure class="quote"><blockquote>Professional, reliable, and completed quality work on time. He provided a quotation, excellent workmanship, and kept us informed of his progress.</blockquote><cite><b>John M.</b>, hot water and outdoor kitchen</cite></figure>
-        <figure class="quote"><blockquote>He is friendly, works hard, and goes out of his way to make sure everything is exactly what you wanted. An example of a true tradesman.</blockquote><cite><b>Margaret G.</b></cite></figure>
-      </div>
-      <div class="dots" id="dots" role="group" aria-label="Choose a review"></div>
+    <div class="manifold" id="manifold">
+      <div class="main-pipe" aria-hidden="true"><i id="water"></i></div>
+      <article class="step"><span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true">1</span>
+        <h3>Tell us what's wrong</h3>
+        <p>Call 0434 219 957 or email a few photos. Jessie asks the right questions so he turns up with the right parts.</p>
+      </article>
+      <article class="step"><span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true">2</span>
+        <h3>Clear quote and options</h3>
+        <p>You get a quotation before work starts, with the pros and cons of each option explained in plain English. Sometimes a repair beats a replacement, and Jessie will tell you.</p>
+      </article>
+      <article class="step"><span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true">3</span>
+        <h3>Work done on time</h3>
+        <p>Jessie arrives when he says he will and keeps you informed at every step, so there are no surprises halfway through.</p>
+      </article>
+      <article class="step"><span class="branch" aria-hidden="true"></span><span class="tap" aria-hidden="true">4</span>
+        <h3>Tidy finish</h3>
+        <p>The job is tested, the area is cleaned up, and you're shown how everything works before he leaves.</p>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- RECENT JOBS -->
+<section class="work" id="work" aria-labelledby="work-title">
+  <div class="work-pin">
+    <div class="wrap head-row">
+      <div>
+        <h2 class="h2" id="work-title">Recent jobs</h2>
+        <p class="intro">Real installs from around Lara and Geelong. Keep scrolling to move through them.</p>
+      </div>
+    </div>
+    <div class="track" id="track">
+      <figure class="shot"><div class="ph"><img src="assets/brivis-roof.jpg" alt="Brivis ducted gas heater installed in a roof space" width="790" height="923" loading="lazy"></div><figcaption><b>Ducted gas heating</b>Brivis unit in the roof, ducting tidied and sealed.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/split-outdoor.jpg" alt="Fujitsu split system outdoor unit on a level pad beside a brick house" width="691" height="923" loading="lazy"></div><figcaption><b>Split system install</b>Outdoor unit on a level pad with the pipework run clean.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/split-indoor.jpg" alt="Fujitsu split system indoor unit on a living room wall" width="1200" height="901" loading="lazy"></div><figcaption><b>Living room split</b>Indoor head placed for even airflow across the room.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/gas-heater-service.jpg" alt="Gas heater opened up for a service in a roof space" width="546" height="923" loading="lazy"></div><figcaption><b>Heater service</b>Burner, controls and flue checked and cleaned.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/ducted-outdoor.jpg" alt="Brivis outdoor gas ducted heater installed beside a weatherboard house" width="1200" height="586" loading="lazy"></div><figcaption><b>Outdoor ducted heater</b>Brivis gas unit fitted outside to free up the roof space.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/mitsubishi.jpg" alt="Mitsubishi Heavy Industries inverter outdoor unit against a brick wall" width="693" height="593" loading="lazy"></div><figcaption><b>Inverter heat pump</b>Mitsubishi outdoor unit for a larger room system.</figcaption></figure>
+      <figure class="shot"><div class="ph"><img src="assets/wood-heater.jpg" alt="Cast iron wood heater on a tiled hearth" width="448" height="428" loading="lazy"></div><figcaption><b>Wood heater</b>Installed with a new flue, ready for winter.</figcaption></figure>
+    </div>
+    <div class="work-progress" aria-hidden="true"><i id="wprog"></i></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews" aria-labelledby="rev-title">
+  <div class="wrap rev-top">
+    <div>
+      <h2 class="h2" id="rev-title">Customers keep calling Jessie back</h2>
+      <p class="intro">Homeowners, landlords and local businesses rate Pata Plumbing 4.8 out of 5 on Google. Here's what they wrote.</p>
+    </div>
+    <div class="rating-card">
+      <div class="rc-top">
+        <div class="rc-score">4.8</div>
+        <div class="rc-meta">
+          <div class="stars" aria-label="Rated 4.8 out of 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <span class="g-badge"><svg class="ico" aria-hidden="true"><use href="#i-google"/></svg>18 Google reviews</span>
+        </div>
+      </div>
+      <div class="chips" aria-label="What reviewers mention most">
+        <span>Reliable plumber<b>4</b></span><span>Punctuality<b>4</b></span><span>Responsive<b>2</b></span><span>Clear explanations<b>2</b></span>
+      </div>
+      <a class="rc-link" href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener">Read all reviews on Google</a>
+    </div>
+  </div>
+
+  <div class="lanes" id="lanes"></div>
+</section>
+
+<!-- ABOUT -->
 <section class="sec about" id="about" aria-labelledby="about-title">
   <div class="wrap">
     <div class="about-ph rv">
-      <img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgYlPsI7aTHnq3Y-j60z5sgz6vzvA-nPI14HsXjhp97pNHD1GNBQNl1x1dnrHVtomxw_W8GyJjdr9DBZ3gpVioBf10NCayTSpVjOgypQCC7wtfaj_9PkyKoq_w5ZT2RXz70Zd-=w1200" alt="Split system outdoor unit installed by Pata Plumbing">
-      <span class="badge">Lara local. Owner on every job.</span>
+      <img src="assets/jessie.jpg" alt="Jessie Pata, owner of Pata Plumbing, giving a thumbs up on a job site" width="553" height="738" loading="lazy">
+      <div class="badge"><img src="assets/logo.png" alt=""><span><b>Jessie Pata</b>Owner and plumber, Lara VIC</span></div>
     </div>
     <div class="rv">
       <h2 class="h2" id="about-title">Hi, I'm Jessie</h2>
       <p>Pata Plumbing is my business, and I run it the way I'd want a tradie to work in my own place. I turn up when I say I will, explain your options in plain English, and leave the job cleaner than I found it.</p>
       <p>Most of my work comes from neighbours in Lara and around Geelong passing my number along. That's the bit I care about most, so every job gets done like the next one depends on it.</p>
       <dl class="facts">
-        <div><dt>Based in</dt><dd>Lara, VIC</dd></div>
-        <div><dt>Google rating</dt><dd>4.8 from 18 reviews</dd></div>
-        <div><dt>Weekdays</dt><dd>9am – 5pm</dd></div>
-        <div><dt>Saturdays</dt><dd>9am – 12pm</dd></div>
+        <div><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span><dt>Based in</dt><dd>Lara, VIC</dd></span></div>
+        <div><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg><span><dt>Google rating</dt><dd>4.8 from 18 reviews</dd></span></div>
+        <div><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span><dt>Weekdays</dt><dd>9am – 5pm</dd></span></div>
+        <div><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span><dt>Saturdays</dt><dd>9am – 12pm</dd></span></div>
       </dl>
     </div>
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="sec faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="faq-head">
+      <h2 class="h2" id="faq-title">Questions people ask</h2>
+      <p class="intro">Can't see yours here? Jessie is happy to answer it over the phone.</p>
+      <a class="btn btn-navy" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Call 0434 219 957</a>
+    </div>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section class="sec contact" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
     <div>
       <h2 class="h2" id="contact-title">Tell Jessie what's going on</h2>
-      <p class="intro" style="color:#B9CDDE">The quickest way is a phone call. If you'd rather write it down, send the details and a photo by email and Jessie will get back to you with a quote.</p>
-      <a class="big-phone" href="tel:+61434219957">0434 219 957</a>
+      <p class="intro" style="color:#B9CDDE">The quickest way is a phone call. If you'd rather write it down, send the details and a photo by email and Jessie will come back to you with a quote.</p>
+      <a class="big-phone" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>0434 219 957</a>
       <ul class="c-list">
-        <li><b>Email</b><a href="mailto:pataplumbing@gmail.com">pataplumbing@gmail.com</a></li>
-        <li><b>Service area</b>Lara, Geelong and surrounds</li>
-        <li><b>Hours</b>Mon–Fri 9am–5pm, Sat 9am–12pm</li>
+        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><span><b>Email</b><a href="mailto:pataplumbing@gmail.com">pataplumbing@gmail.com</a></span></li>
+        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><span><b>Service area</b>Lara, Geelong and surrounds</span></li>
+        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span><span><b>Hours</b>Mon–Fri 9am–5pm, Sat 9am–12pm</span></li>
       </ul>
+      <div class="socials">
+        <a href="https://www.instagram.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener" aria-label="Pata Plumbing on Google Maps"><svg class="ico" aria-hidden="true"><use href="#i-google"/></svg></a>
+      </div>
     </div>
     <form id="quote" novalidate>
       <h3>Request a quote</h3>
@@ -542,71 +704,135 @@ footer a:hover{color:#fff}
 
 <footer>
   <div class="wrap">
-    <span>© <span id="yr"></span> Pata Plumbing, Lara VIC</span>
-    <span><a href="https://www.instagram.com/pataplumbing/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/pataplumbing/" target="_blank" rel="noopener">Facebook</a><a href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener">Google</a></span>
+    <div class="foot-grid">
+      <div>
+        <a class="logo-chip" href="#main" aria-label="Back to top"><img src="assets/logo.png" alt="Pata Plumbing" width="112" height="40"></a>
+        <p>Jessie the Plumber. Plumbing, gas, heating and cooling for homes and businesses in Lara and Geelong. Treating your home as our own.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
+          <a href="https://www.facebook.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
+          <a href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener" aria-label="Pata Plumbing on Google Maps"><svg class="ico" aria-hidden="true"><use href="#i-google"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+61434219957">0434 219 957</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:pataplumbing@gmail.com">pataplumbing@gmail.com</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Lara, VIC</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Mon–Fri 9–5, Sat 9–12</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how">How we work</a></li>
+          <li><a href="#work">Recent jobs</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>© <span id="yr"></span> Pata Plumbing, Lara VIC</span><span>Treating your home as our own</span></div>
   </div>
 </footer>
 
-<div class="callbar" id="callbar"><a class="btn btn-tag" href="tel:+61434219957"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call Jessie on 0434 219 957</a></div>
+<div class="callbar" id="callbar"><a class="btn btn-tag" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Call Jessie on 0434 219 957</a></div>
 
 <script>
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // header + mobile call bar
-  const top = document.getElementById('top'), bar = document.getElementById('callbar');
-  const onScroll = () => {
-    const y = scrollY;
-    top.classList.toggle('solid', y > 40);
-    bar.classList.toggle('show', y > innerHeight * .7);
-    fillManifold();
-  };
+  /* ---- reviews (real Google reviews, lightly trimmed) ---- */
+  const reviews = [
+    ['Lauren S.', "Can't speak highly enough of Jessie. Responsive, professional and an all round genuine guy. I needed a plumber urgently for my dog grooming business. Jessie came at 7am Saturday morning."],
+    ['Greg B.', "None of the other plumbers in Lara would even pick up the phone. Jessie answered and offered to come out despite already being fully booked. He explained the pros and cons of various options."],
+    ['Phil P.', "Used Jessie multiple times at my home and investment property. No job is too big or too small. He came up with a great fix for my central heating which saved me having to replace it."],
+    ['Debbie S.', "Jessie installed a new split system for us and did a very neat and tidy job. They keep you informed every step of the way. Highly recommend."],
+    ['John M.', "Jesse installed our new hot water service and appliances in our new outdoor kitchen. Quality work on time, excellent workmanship, and kept us informed at all times."],
+    ['Shane M.', "Needed a reliable plumber for an urgent issue. The plumber arrived when they said he would. Jessie quickly diagnosed the problem and resolved it with minimal disruption."],
+    ['Margaret G.', "I don't give reviews as a rule, but Pata Plumbing is an exception. Friendly, works hard, and goes out of his way to make sure everything is exactly what you wanted."],
+    ['Natalie B.', "Professional and helpful in replacing my hot water service. I was advised on what needed to be done and felt I had an honest opinion. Great experience."],
+    ['Troy W.', "Professional, helpful and did a fantastic job of installing our woodfire heater. Will definitely be our go-to plumber from now on."],
+    ['Andrew F.', "Jesse made himself available at short notice to replace our gas hot water service. Prompt and professional. I would not hesitate in recommending him."]
+  ];
+  const tones = ['#2F7FB5','#0C2440','#C4932B','#3A9ED3','#4E6A84'];
+  const star = '<svg><use href="#i-star"/></svg>';
+  const card = ([n, t], i) => `<article class="rcard"><header><span class="av" style="background:${tones[i % tones.length]}">${n[0]}</span><span class="who">${n}<small><svg class="ico" aria-hidden="true"><use href="#i-google"/></svg>Google review</small></span></header><div class="stars" aria-label="5 out of 5">${star.repeat(5)}</div><p>${t}</p></article>`;
+  const half = Math.ceil(reviews.length / 2);
+  const rowA = reviews.slice(0, half).map(card).join(''), rowB = reviews.slice(half).map((r, i) => card(r, i + half)).join('');
+  document.getElementById('lanes').innerHTML =
+    `<div class="lane">${rowA}<span class="dup" style="display:contents" aria-hidden="true">${rowA}</span></div>` +
+    `<div class="lane rev">${rowB}<span class="dup" style="display:contents" aria-hidden="true">${rowB}</span></div>`;
 
-  // services manifold: water fills the main pipe as you scroll, branches open as it passes
+  /* ---- FAQ ---- */
+  const faqs = [
+    ['What areas do you cover?', 'Pata Plumbing is based in Lara and works across Lara, Geelong and the surrounding suburbs. If you are a bit further out, call and ask. Jessie will tell you straight away if he can get to you.'],
+    ['What are your hours?', 'Monday to Friday 9am to 5pm, and Saturday 9am to 12pm.'],
+    ['Can you help with an urgent job?', 'Call 0434 219 957 as soon as you can. If Jessie can fit you in, he will. Customers have had him out first thing on a Saturday morning, and on days he was already booked.'],
+    ['Will I get a quote before work starts?', 'Yes. You get a quotation up front, with your options and their pros and cons explained, so you can decide before anything is done.'],
+    ['Do you install split systems and heaters?', 'Yes. Jessie installs split systems, services and repairs ducted gas heating, connects gas heaters and appliances, and installs wood heaters including flues and fan change-overs.'],
+    ['Can you replace my hot water system?', 'Yes. Jessie replaces and repairs hot water services, including gas units, and can often do it at short notice.'],
+    ['Do you work on rentals and businesses?', 'Yes. As well as family homes, Jessie looks after investment properties and local businesses, from a dog grooming salon to outdoor kitchen fit-outs.'],
+    ['Do you do roofing and gutters?', 'Yes. Gutter cleaning, gutter and roof repairs, flashings and stormwater drainage are all part of the job list.']
+  ];
+  document.getElementById('faq-list').innerHTML = faqs.map(([q, a], i) => `<details class="qa"${i === 0 ? ' open' : ''}><summary>${q}<span class="pm" aria-hidden="true"></span></summary><div class="ans">${a}</div></details>`).join('');
+  document.getElementById('faq-schema').textContent = JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))});
+
+  /* ---- header, call bar ---- */
+  const top = document.getElementById('top'), bar = document.getElementById('callbar');
+
+  /* ---- how we work: water fills the pipe as you scroll ---- */
   const man = document.getElementById('manifold'), water = document.getElementById('water');
-  const svcs = [...man.querySelectorAll('.svc')];
+  const steps = [...man.querySelectorAll('.step')];
   function fillManifold(){
     const r = man.getBoundingClientRect();
     const level = Math.max(0, Math.min(r.height, innerHeight * .62 - r.top));
     water.style.height = level + 'px';
-    svcs.forEach(s => s.classList.toggle('on', s.offsetTop + 52 <= level));
+    steps.forEach(s => s.classList.toggle('on', s.offsetTop + 56 <= level));
+  }
+
+  /* ---- recent jobs: vertical scroll drives the track sideways ---- */
+  const work = document.getElementById('work'), track = document.getElementById('track'), prog = document.getElementById('wprog');
+  let travel = 0;
+  function sizeWork(){
+    if (reduce){ work.classList.add('static'); return; }
+    travel = Math.max(0, track.scrollWidth - innerWidth);
+    work.style.height = (innerHeight + travel) + 'px';
+    moveWork();
+  }
+  function moveWork(){
+    if (reduce) return;
+    const r = work.getBoundingClientRect();
+    const p = travel ? Math.min(1, Math.max(0, -r.top / travel)) : 0;
+    track.style.transform = `translate3d(${-p * travel}px,0,0)`;
+    prog.style.width = (p * 100) + '%';
+  }
+
+  let ticking = false;
+  function onScroll(){
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      const y = scrollY;
+      top.classList.toggle('solid', y > 40);
+      bar.classList.toggle('show', y > innerHeight * .7);
+      fillManifold(); moveWork();
+      ticking = false;
+    });
   }
   addEventListener('scroll', onScroll, {passive:true});
-  addEventListener('resize', fillManifold);
-  onScroll();
+  addEventListener('resize', () => { sizeWork(); fillManifold(); });
+  track.querySelectorAll('img').forEach(img => img.complete || img.addEventListener('load', sizeWork, {once:true}));
+  addEventListener('load', sizeWork);
+  sizeWork(); onScroll();
 
-  // gallery arrows
-  const rail = document.getElementById('rail');
-  const step = () => rail.querySelector('.shot').getBoundingClientRect().width + 22;
-  document.getElementById('prev').onclick = () => rail.scrollBy({left:-step(), behavior: reduce ? 'auto' : 'smooth'});
-  document.getElementById('next').onclick = () => rail.scrollBy({left: step(), behavior: reduce ? 'auto' : 'smooth'});
-
-  // reviews
-  const qs = [...document.querySelectorAll('.quote')], dots = document.getElementById('dots');
-  let cur = 0, timer;
-  qs.forEach((q, i) => {
-    const b = document.createElement('button');
-    b.type = 'button'; b.setAttribute('aria-label', 'Review ' + (i + 1));
-    b.onclick = () => { show(i); restart(); };
-    dots.appendChild(b);
-  });
-  function show(i){
-    cur = i;
-    qs.forEach((q, k) => q.classList.toggle('active', k === i));
-    [...dots.children].forEach((d, k) => d.setAttribute('aria-current', k === i));
-  }
-  function restart(){ clearInterval(timer); if (!reduce) timer = setInterval(() => show((cur + 1) % qs.length), 6500); }
-  show(0); restart();
-  const stage = document.getElementById('quotes');
-  stage.addEventListener('mouseenter', () => clearInterval(timer));
-  stage.addEventListener('mouseleave', restart);
-
-  // gentle reveal
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.2});
+  /* ---- gentle reveal ---- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.15});
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-  // quote form → prefilled email
+  /* ---- quote form → prefilled email ---- */
   const form = document.getElementById('quote'), note = document.getElementById('form-note');
   form.addEventListener('submit', e => {
     e.preventDefault();
