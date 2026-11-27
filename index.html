@@ -183,6 +183,11 @@ section{scroll-margin-top:70px}
 .t-gas{grid-row:span 2}
 .t-gp{grid-column:span 2}
 .t-rd{grid-column:span 2}
+.tile-q{position:absolute;top:22px;right:22px;font-size:13px;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--navy);opacity:0;transform:translateY(-6px);transition:opacity .3s,transform .3s var(--ease),background .2s}
+.tile:hover .tile-q,.tile-q:focus-visible{opacity:1;transform:none}
+.tile-q:hover{background:var(--tag)}
+.t-white .tile-q{background:var(--navy);color:#fff}
+@media (hover:none){.tile-q{opacity:1;transform:none}}
 .tile .ico-anim{transition:transform .6s var(--ease)}
 .tile:hover .ico-anim{transform:rotate(-12deg) scale(1.06)}
 @media (max-width:980px){
@@ -198,7 +203,7 @@ section{scroll-margin-top:70px}
 }
 
 /* ---------- how we work (pipe manifold) ---------- */
-.how{background:#fff}
+.how{background:var(--paper)}
 .how .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
 .how-head{position:sticky;top:130px}
 .manifold{position:relative;padding-left:84px}
@@ -208,7 +213,7 @@ section{scroll-margin-top:70px}
 .step:last-child{border-bottom:0}
 .step .branch{position:absolute;left:-66px;top:50px;width:40px;height:12px;border-radius:0 6px 6px 0;background:#DCE6EE;box-shadow:inset 0 0 0 2px #C7D5E1;overflow:hidden}
 .step .branch::after{content:"";position:absolute;inset:0;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.step .tap{position:absolute;left:-36px;top:36px;width:40px;height:40px;border-radius:50%;background:#fff;border:3px solid #C7D5E1;display:grid;place-items:center;font:800 20px/1 var(--display);color:#9AB0C3;transition:border-color .4s,background .4s,color .4s}
+.step .tap{position:absolute;left:-36px;top:36px;width:40px;height:40px;border-radius:50%;background:var(--paper);border:3px solid #C7D5E1;display:grid;place-items:center;font:800 20px/1 var(--display);color:#9AB0C3;transition:border-color .4s,background .4s,color .4s}
 .step.on .branch::after{transform:none}
 .step.on .tap{border-color:var(--sky);background:var(--navy);color:#fff}
 .step h3{font:800 clamp(30px,3.2vw,40px)/1 var(--display);color:var(--navy);padding-left:20px}
@@ -293,6 +298,7 @@ section{scroll-margin-top:70px}
 @media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:40px}.about-ph{max-width:none;aspect-ratio:4/4.4}}
 
 /* ---------- FAQ ---------- */
+.faq{background:#fff}
 .faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
 .faq-head{position:sticky;top:130px}
 .faq-head .btn{margin-top:30px}
@@ -317,26 +323,87 @@ section{scroll-margin-top:70px}
 .big-phone{white-space:nowrap;display:inline-flex;align-items:center;gap:16px;margin-top:34px;font:900 clamp(44px,5.4vw,80px)/.9 var(--display);color:var(--tag);text-decoration:none;transition:color .2s}
 .big-phone .ico{width:.6em;height:.6em}
 .big-phone:hover{color:#fff}
-.c-list{list-style:none;margin-top:38px;display:grid;gap:20px;color:#C9DAE8}
-.c-list li{display:flex;gap:16px;align-items:flex-start}
-.c-ico{width:46px;height:46px;border-radius:12px;background:rgba(91,184,230,.14);color:var(--sky);display:grid;place-items:center;flex:none}
-.c-ico .ico{width:22px;height:22px}
-.c-list b{display:block;color:#fff;font-weight:600}
-.c-list a{color:#fff}
 .socials{display:flex;gap:10px;margin-top:34px}
 .socials a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25);transition:background .25s,box-shadow .25s,color .25s,transform .25s var(--ease)}
 .socials a:hover{background:var(--sky);color:var(--navy);box-shadow:none;transform:translateY(-2px)}
-form{background:#fff;color:var(--text);border-radius:22px;padding:clamp(24px,3.4vw,40px);display:grid;gap:18px;align-self:start}
-form h3{font:800 34px/1 var(--display);color:var(--navy)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-label{display:grid;gap:7px;font-size:14px;font-weight:600;color:var(--navy-2)}
-input,select,textarea{font:inherit;font-size:16px;color:var(--text);padding:13px 14px;border:2px solid var(--line);border-radius:10px;background:var(--paper);transition:border-color .2s,background .2s;width:100%}
-input:focus,select:focus,textarea:focus{outline:0;border-color:var(--sky);background:#fff}
-textarea{min-height:120px;resize:vertical}
-.form-note{font-size:14px;color:var(--muted)}
-form .btn{justify-self:start}
+.contact .wrap{grid-template-columns:.82fr 1.18fr;align-items:start}
+
+/* job ticket: fills in live as the form is answered */
+.ticket{position:relative;margin-top:34px;background:#fff;color:var(--navy);border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.ticket .tk-top{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:var(--tag);font:800 22px/1 var(--display);letter-spacing:.02em}
+.ticket .tk-top small{font:600 13px/1 var(--body);letter-spacing:0;opacity:.75}
+.ticket::before,.ticket::after{content:"";position:absolute;top:54px;width:22px;height:22px;border-radius:50%;background:var(--navy);transform:translateY(-50%)}
+.ticket::before{left:-11px}.ticket::after{right:-11px}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:0 18px;padding:14px 22px 6px;border-top:2px dashed #E2E9EF}
+.ticket dt{font-size:13px;color:var(--muted);padding:10px 0;border-bottom:1px solid #EDF2F6}
+.ticket dd{font-weight:700;text-align:right;padding:10px 0;border-bottom:1px solid #EDF2F6;color:#A9BACA;min-width:0;overflow-wrap:anywhere}
+.ticket dt:nth-last-of-type(1),.ticket dd:last-of-type{border-bottom:0}
+.ticket dd.set{color:var(--navy);animation:tkPop .6s var(--ease)}
+@keyframes tkPop{0%{background:rgba(244,196,48,.45);transform:translateX(-6px)}100%{background:transparent;transform:none}}
+.ticket .tk-foot{display:grid;gap:8px;padding:16px 22px 20px;background:var(--paper);font-size:14px;color:var(--muted)}
+.ticket .tk-foot span{display:flex;align-items:center;gap:10px}
+.ticket .tk-foot .ico{width:16px;height:16px;color:var(--sky)}
+.ticket .tk-foot a{color:var(--navy);font-weight:600}
+
+/* multi-step quote form */
+.qcard{background:#fff;color:var(--text);border-radius:22px;padding:clamp(22px,3.2vw,40px);box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.qcard h3{font:800 clamp(30px,3vw,38px)/1 var(--display);color:var(--navy);margin-bottom:22px}
+.road{position:relative;height:58px;margin-bottom:6px}
+.road .pipe{position:absolute;left:0;right:0;bottom:10px;height:10px;border-radius:5px;background:#E3EBF1;box-shadow:inset 0 0 0 2px #D3DEE7;overflow:hidden}
+.road .pipe i{display:block;height:100%;width:0;background:linear-gradient(90deg,#3A9ED3,var(--sky));transition:width .8s var(--ease)}
+.road .pipe i::after{content:"";display:block;height:100%;background:repeating-linear-gradient(90deg,transparent 0 14px,rgba(255,255,255,.45) 14px 22px);animation:qflow 1s linear infinite}
+@keyframes qflow{to{background-position:22px 0}}
+.van{position:absolute;bottom:16px;left:0;width:66px;transition:left .8s var(--ease);color:var(--navy)}
+.van svg{width:66px;height:auto;display:block}
+.van .wheel{transform-box:fill-box;transform-origin:center;animation:wheel .9s linear infinite paused}
+.van.moving .wheel{animation-play-state:running}
+.van .body{animation:bob 1.6s ease-in-out infinite}
+@keyframes wheel{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-1px)}}
+.stepmeta{display:flex;justify-content:space-between;font-weight:600;font-size:15px;color:var(--muted);margin-bottom:24px}
+.stepmeta b{color:#2F7FB5}
+.fs{border:0;margin:0;padding:0;min-width:0;animation:fin .5s var(--ease)}
+.fs[hidden]{display:none}
+@keyframes fin{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.fq{font:800 clamp(26px,2.6vw,34px)/1.05 var(--display);color:var(--navy);padding:0;margin-bottom:6px;outline:none}
+.fh{color:var(--muted);margin-bottom:20px;font-size:16px}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:12px}
+.opt{display:flex;position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{flex:1;display:flex;align-items:center;gap:14px;min-height:76px;padding:12px 14px;border:2px solid var(--line);border-radius:14px;cursor:pointer;background:#fff;font-size:15.5px;font-weight:700;color:var(--navy);transition:border-color .25s,background .25s,transform .25s var(--ease),box-shadow .25s}
+.opt label:hover{border-color:var(--sky);transform:translateY(-2px)}
+.opt input:focus-visible+label{outline:3px solid var(--tag);outline-offset:2px}
+.opt input:checked+label{border-color:var(--sky);background:#EEF8FD;box-shadow:0 14px 26px -18px rgba(47,127,181,.9)}
+.opt .ic{width:46px;height:46px;border-radius:12px;background:#E9F0F5;color:var(--navy);display:grid;place-items:center;flex:none;transition:background .25s}
+.opt input:checked+label .ic{background:var(--tag)}
+.opt .ic svg{width:24px;height:24px}
+.opt .t{line-height:1.25;min-width:0}
+.opt .t small{display:block;font-weight:500;color:var(--muted);font-size:13px;margin-top:2px}
+.opt .ck{margin-left:auto;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;transform:scale(0);transition:transform .35s var(--ease);flex:none}
+.opt .ck svg{width:15px;height:15px}
+.opt input:checked+label .ck{transform:scale(1)}
+.field{display:grid;gap:7px;margin-bottom:16px}
+.field label{font-size:14px;font-weight:600;color:var(--navy-2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input,textarea{font:inherit;font-size:16px;color:var(--text);padding:13px 14px;border:2px solid var(--line);border-radius:10px;background:var(--paper);transition:border-color .2s,background .2s;width:100%}
+input:focus,textarea:focus{outline:0;border-color:var(--sky);background:#fff}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#C0392B}
+textarea{min-height:110px;resize:vertical}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ferr{margin-top:14px;color:#B3261E;font-weight:600;font-size:15px}
+.fnav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+.fnav .next{margin-left:auto}
+.btn-line{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 2px var(--line)}
+.btn-line:hover{box-shadow:inset 0 0 0 2px var(--navy)}
+.done{text-align:center;padding:30px 10px 10px;animation:fin .6s var(--ease)}
+.done .tick{width:74px;height:74px;border-radius:50%;background:var(--tag);display:grid;place-items:center;margin:0 auto 20px;animation:tickPop .7s cubic-bezier(.3,1.6,.4,1)}
+.done .tick svg{width:36px;height:36px}
+@keyframes tickPop{from{transform:scale(0)}}
+.done h3{margin-bottom:12px}
+.done p{color:var(--muted);max-width:30em;margin:0 auto}
+.qcard.is-done .fbody{display:none}
+@media (max-width:620px){.opts,.grid2{grid-template-columns:1fr}.opt label{min-height:64px}}
 @media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:50px}}
-@media (max-width:520px){.row{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */
 footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px}
@@ -555,6 +622,7 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
       <article class="tile t-photo t-hc" data-a="scale">
         <img src="assets/split-indoor.jpg" alt="Fujitsu split system installed on a living room wall" loading="lazy">
         <h3>Heating & cooling</h3>
+        <a class="tile-q" href="#contact" data-pick="Heating & cooling">Get a quote</a>
         <p>Split systems supplied and installed neatly, ducted gas heating serviced, and central heating fixes that can save you replacing the whole unit.</p>
         <ul><li>Split systems</li><li>Ducted heating</li><li>Fan change-overs</li><li>Heater repairs</li></ul>
       </article>
@@ -562,6 +630,7 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
       <article class="tile t-photo t-gas" data-a="scale">
         <img src="assets/gas-heater-service.jpg" alt="Gas heater opened up for a service in a roof space" loading="lazy" style="object-position:50% 70%">
         <h3>Gas fitting & servicing</h3>
+        <a class="tile-q" href="#contact" data-pick="Gas fitting">Get a quote</a>
         <p>Gas heaters, cooktops and appliances connected, serviced and safety-checked.</p>
         <ul><li>Gas servicing</li><li>Appliance installs</li><li>Outdoor kitchens</li></ul>
       </article>
@@ -569,18 +638,21 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
       <article class="tile t-yellow" data-a="scale">
         <span class="tile-ico ico-anim" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M24 5s13 13.6 13 23.5a13 13 0 0 1-26 0C11 18.6 24 5 24 5z"/><path d="M18 30a6 6 0 0 0 6 6" stroke-linecap="round"/></svg></span>
         <h3>Hot water</h3>
+        <a class="tile-q" href="#contact" data-pick="Hot water">Get a quote</a>
         <p>Hot water services replaced and repaired, often at short notice.</p>
       </article>
 
       <article class="tile t-photo" data-a="scale">
         <img src="assets/wood-heater.jpg" alt="Cast iron wood heater installed against a brick wall" loading="lazy">
         <h3>Wood heaters</h3>
+        <a class="tile-q" href="#contact" data-pick="Wood heater">Get a quote</a>
         <p>Installs, flues, fan change-overs and chimney sweeps.</p>
       </article>
 
       <article class="tile t-white t-gp" data-a="scale">
         <span class="tile-ico ico-anim" aria-hidden="true" style="color:var(--sky)"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M29.5 12.5a8 8 0 0 0-10.8 10.8L7 35l6 6 11.7-11.7a8 8 0 0 0 10.8-10.8l-5 5-4.8-1.2-1.2-4.8z"/></svg></span>
         <h3>General plumbing</h3>
+        <a class="tile-q" href="#contact" data-pick="General plumbing">Get a quote</a>
         <p>Leaking taps, running toilets, new basins and dishwasher installs. The everyday jobs that need someone who answers the phone.</p>
         <ul><li>Taps</li><li>Toilets</li><li>Basins</li><li>Dishwashers</li><li>Maintenance</li></ul>
       </article>
@@ -588,6 +660,7 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
       <article class="tile t-navy t-rd" data-a="scale">
         <span class="tile-ico ico-anim" aria-hidden="true" style="color:var(--sky)"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22L24 7l19 15"/><path d="M10 19v21h28V19"/><path d="M40 24h4v8"/><path d="M44 36v3"/></svg></span>
         <h3>Roofing & drainage</h3>
+        <a class="tile-q" href="#contact" data-pick="Roofing & drainage">Get a quote</a>
         <p>Gutters cleaned and repaired, flashings replaced, and stormwater drains cleared so water ends up where it should.</p>
         <ul><li>Gutter cleaning</li><li>Flashings</li><li>Roof repairs</li><li>Drainage</li></ul>
       </article>
@@ -709,37 +782,91 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
   <div class="wrap">
     <div data-stagger>
       <h2 class="h2" id="contact-title" data-a="mask">Tell Jessie what's going on</h2>
-      <p class="intro" data-a="up" style="color:#B9CDDE">The quickest way is a phone call. If you'd rather write it down, send the details and a photo by email and Jessie will come back to you with a quote.</p>
+      <p class="intro" data-a="up" style="color:#B9CDDE">Answer six quick questions and Jessie will come back to you with a quote. In a hurry? Just call.</p>
       <a data-a="up" class="big-phone" href="tel:+61434219957"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>0434 219 957</a>
-      <ul class="c-list" data-a="up">
-        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><span><b>Email</b><a href="mailto:pataplumbing@gmail.com">pataplumbing@gmail.com</a></span></li>
-        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><span><b>Service area</b>Lara, Geelong and surrounds</span></li>
-        <li><span class="c-ico"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span><span><b>Hours</b>Mon–Fri 9am–5pm, Sat 9am–12pm</span></li>
-      </ul>
+      <div class="ticket" data-a="up" aria-live="polite">
+        <div class="tk-top">Your job ticket<small>Fills in as you go</small></div>
+        <dl>
+          <dt>Service</dt><dd id="s-service">—</dd>
+          <dt>Job</dt><dd id="s-job">—</dd>
+          <dt>When</dt><dd id="s-when">—</dd>
+          <dt>Property</dt><dd id="s-property">—</dd>
+          <dt>Suburb</dt><dd id="s-suburb">—</dd>
+        </dl>
+        <div class="tk-foot">
+          <span><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:pataplumbing@gmail.com">pataplumbing@gmail.com</a></span>
+          <span><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Lara, Geelong and surrounds</span>
+          <span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Mon–Fri 9am–5pm, Sat 9am–12pm</span>
+        </div>
+      </div>
       <div class="socials" data-a="up">
         <a href="https://www.instagram.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
         <a href="https://www.facebook.com/pataplumbing/" target="_blank" rel="noopener" aria-label="Pata Plumbing on Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
         <a href="https://maps.app.goo.gl/o8xErtH1esT9ddGK6" target="_blank" rel="noopener" aria-label="Pata Plumbing on Google Maps"><svg class="ico" aria-hidden="true"><use href="#i-google"/></svg></a>
       </div>
     </div>
-    <form id="quote" novalidate data-a="right">
-      <h3>Request a quote</h3>
-      <div class="row">
-        <label>Your name<input name="name" autocomplete="name" required></label>
-        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
-      </div>
-      <div class="row">
-        <label>Suburb<input name="suburb" autocomplete="address-level2" placeholder="e.g. Lara"></label>
-        <label>Type of job
-          <select name="job">
-            <option>Hot water</option><option>Heating & cooling</option><option>Gas fitting</option><option>Wood heater</option><option>General plumbing</option><option>Roofing & drainage</option><option>Something else</option>
-          </select>
-        </label>
-      </div>
-      <label>What's happening?<textarea name="msg" placeholder="A short description helps Jessie bring the right parts."></textarea></label>
-      <p class="form-note" id="form-note">This opens your email app with the details filled in, ready to send.</p>
-      <button class="btn btn-tag" type="submit">Send enquiry</button>
-    </form>
+
+    <div class="qcard" id="qcard" data-a="right">
+      <h3>Get a quote in six quick steps</h3>
+      <form id="quote" novalidate>
+        <div class="fbody">
+          <div class="road" aria-hidden="true">
+            <div class="van" id="van"><svg viewBox="0 0 66 34"><g class="body"><path d="M3 9a3 3 0 0 1 3-3h33v20H3z" fill="#0C2440"/><path d="M39 11h13l9 9v6H39z" fill="#0C2440"/><path d="M42 14h9l6 6H42z" fill="#5BB8E6"/><rect x="3" y="16" width="36" height="4" fill="#F4C430"/><rect x="60" y="21" width="4" height="3" rx="1" fill="#F4C430"/></g><g class="wheel"><circle cx="15" cy="27" r="5" fill="#0C2440" stroke="#fff" stroke-width="2"/><path d="M15 23v8M11 27h8" stroke="#fff" stroke-width="1.4"/></g><g class="wheel"><circle cx="51" cy="27" r="5" fill="#0C2440" stroke="#fff" stroke-width="2"/><path d="M51 23v8M47 27h8" stroke="#fff" stroke-width="1.4"/></g></svg></div>
+            <div class="pipe"><i id="qrail"></i></div>
+          </div>
+          <div class="stepmeta"><span id="slabel" aria-live="polite">Step 1 of 6</span><b id="spct">0%</b></div>
+
+          <fieldset class="fs" data-key="service">
+            <legend class="fq" tabindex="-1">What do you need help with?</legend>
+            <p class="fh">Pick the closest match.</p>
+            <div class="opts" id="o-service"></div>
+          </fieldset>
+          <fieldset class="fs" data-key="job" hidden>
+            <legend class="fq" tabindex="-1">What kind of job is it?</legend>
+            <p class="fh">This helps Jessie bring the right parts.</p>
+            <div class="opts" id="o-job"></div>
+          </fieldset>
+          <fieldset class="fs" data-key="when" hidden>
+            <legend class="fq" tabindex="-1">How soon do you need it done?</legend>
+            <p class="fh">If water or gas is leaking right now, call 0434 219 957 instead.</p>
+            <div class="opts" id="o-when"></div>
+          </fieldset>
+          <fieldset class="fs" data-key="property" hidden>
+            <legend class="fq" tabindex="-1">What type of property is it?</legend>
+            <p class="fh">A rough answer is fine.</p>
+            <div class="opts" id="o-property"></div>
+          </fieldset>
+          <fieldset class="fs" data-key="suburb" hidden>
+            <legend class="fq" tabindex="-1">Where's the job?</legend>
+            <p class="fh">Pata Plumbing covers Lara, Geelong and the surrounding suburbs.</p>
+            <div class="field"><label for="f-suburb">Suburb *</label><input id="f-suburb" name="suburb" type="text" autocomplete="address-level2" placeholder="e.g. Lara" required></div>
+          </fieldset>
+          <fieldset class="fs" data-key="contact" hidden>
+            <legend class="fq" tabindex="-1">Last step. How can Jessie reach you?</legend>
+            <p class="fh">He'll call or email back with a quote, usually within a business day.</p>
+            <div class="field"><label for="f-name">Name *</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="grid2">
+              <div class="field"><label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            </div>
+            <div class="field"><label for="f-msg">Anything else Jessie should know?</label><textarea id="f-msg" name="msg" rows="4" placeholder="e.g. Hot water unit is about 12 years old and leaking from the bottom."></textarea></div>
+            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          </fieldset>
+
+          <p class="ferr" id="ferr" role="alert" hidden></p>
+          <div class="fnav">
+            <button type="button" class="btn btn-line back" id="back" hidden>Back</button>
+            <button type="submit" class="btn btn-tag next" id="next"><span>Next</span></button>
+          </div>
+        </div>
+        <div class="done" id="done" tabindex="-1" hidden>
+          <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#0C2440" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg></span>
+          <h3 id="done-t">Thanks, your quote request is ready</h3>
+          <p>Your email app should now be open with everything filled in. Press send there and Jessie will get back to you. If nothing opened, call <a href="tel:+61434219957"><strong>0434 219 957</strong></a>.</p>
+        </div>
+        <noscript><p class="ferr">Turn on JavaScript to use this form, or call 0434 219 957.</p></noscript>
+      </form>
+    </div>
   </div>
 </section>
 </main>
@@ -908,22 +1035,114 @@ footer{background:var(--navy-3);color:#8FA9C0;font-size:15px;padding:60px 0 40px
   if (document.readyState === 'complete') lift(); else addEventListener('load', lift);
   setTimeout(lift, 3500);
 
-  /* ---- quote form → prefilled email ---- */
-  const form = document.getElementById('quote'), note = document.getElementById('form-note');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const f = new FormData(form);
-    if (!f.get('name').trim() || !f.get('phone').trim()){
-      note.textContent = 'Add your name and phone number so Jessie can call you back.';
-      note.style.color = '#B3261E';
-      (f.get('name').trim() ? form.phone : form.name).focus();
-      return;
-    }
-    const body = `Name: ${f.get('name')}\nPhone: ${f.get('phone')}\nSuburb: ${f.get('suburb')}\nJob: ${f.get('job')}\n\n${f.get('msg')}`;
-    location.href = `mailto:pataplumbing@gmail.com?subject=${encodeURIComponent('Quote request: ' + f.get('job'))}&body=${encodeURIComponent(body)}`;
-    note.textContent = 'Your email app should open with the enquiry ready to send.';
-    note.style.color = '';
+  /* ---- multi-step quote form ---- */
+  const IC = {
+    'Hot water':'<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',
+    'Heating & cooling':'<path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 9v7"/>',
+    'Gas fitting':'<path d="M12 22c4 0 7-2.7 7-6.8 0-3.9-3-6-4-9.2-1.6 1.6-2 3.4-2 5-1.4-1-2.5-3-2-6C8 7 5 10.6 5 15.2 5 19.3 8 22 12 22z"/>',
+    'Wood heater':'<rect x="5" y="9" width="14" height="11" rx="2"/><path d="M10 9V3h3v6M9 15h6"/>',
+    'General plumbing':'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/>',
+    'Roofing & drainage':'<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>',
+    'Something is broken or leaking':'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.01"/>',
+    'New install or replacement':'<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/>',
+    'Service or check-up':'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+    'Not sure yet':'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.5M12 17v.01"/>',
+    'Today or tomorrow':'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+    'This week':'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    'In the next few weeks':'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    'Just getting a price':'<path d="M20 12 12 20 4 12V4h8z"/><circle cx="8.5" cy="8.5" r="1.5"/>',
+    'Home':'<path d="M3 10 12 3l9 7v11H3z"/><path d="M9 21v-6h6v6"/>',
+    'Rental or investment':'<circle cx="8" cy="14" r="4"/><path d="M11 11l9-9M17 5l2 2M15 7l2 2"/>',
+    'Business':'<path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/>',
+    'Other':'<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>'
+  };
+  const DATA = {
+    service:[['Hot water','Repairs and replacements'],['Heating & cooling','Split systems, ducted heating'],['Gas fitting','Heaters, cooktops, servicing'],['Wood heater','Installs, flues, sweeps'],['General plumbing','Taps, toilets, basins'],['Roofing & drainage','Gutters, flashings, drains']],
+    job:[['Something is broken or leaking'],['New install or replacement'],['Service or check-up'],['Not sure yet']],
+    when:[['Today or tomorrow'],['This week'],['In the next few weeks'],['Just getting a price']],
+    property:[['Home'],['Rental or investment'],['Business'],['Other']]
+  };
+  const CK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>';
+  Object.keys(DATA).forEach(k => {
+    document.getElementById('o-' + k).innerHTML = DATA[k].map(([t, sub], i) =>
+      `<div class="opt"><input type="radio" name="${k}" id="f-${k}-${i}" value="${t}"><label for="f-${k}-${i}"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[t]}</svg></span><span class="t">${t.replace('&','&amp;')}${sub ? `<small>${sub}</small>` : ''}</span><span class="ck">${CK}</span></label></div>`).join('');
   });
+
+  const form = document.getElementById('quote'), qsteps = [...form.querySelectorAll('.fs')], N = qsteps.length;
+  const err = document.getElementById('ferr'), back = document.getElementById('back'), next = document.getElementById('next');
+  const van = document.getElementById('van'), qrail = document.getElementById('qrail'), qcard = document.getElementById('qcard');
+  let cur = 0;
+  const setT = (k, v) => { const el = document.getElementById('s-' + k); if (!el) return; el.textContent = v || '—'; el.classList.remove('set'); if (v){ void el.offsetWidth; el.classList.add('set'); } };
+  const picked = st => st.querySelector('input[type=radio]:checked');
+  function drive(p){
+    const w = van.parentElement.clientWidth - 66;
+    van.classList.add('moving'); van.style.left = Math.max(0, p * w) + 'px';
+    clearTimeout(drive.t); drive.t = setTimeout(() => van.classList.remove('moving'), 800);
+    qrail.style.width = (p * 100) + '%';
+  }
+  function show(focus){
+    qsteps.forEach((s, i) => s.hidden = i !== cur);
+    const p = cur / N; drive(p);
+    document.getElementById('spct').textContent = Math.round(p * 100) + '%';
+    document.getElementById('slabel').textContent = `Step ${cur + 1} of ${N}`;
+    back.hidden = cur === 0;
+    next.querySelector('span').textContent = cur === N - 1 ? 'Send quote request' : 'Next';
+    err.hidden = true;
+    if (focus){
+      qsteps[cur].querySelector('.fq').focus({preventScroll:true});
+      const top = qcard.getBoundingClientRect().top;
+      if (top < 0 || top > innerHeight * .5) qcard.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+    }
+  }
+  function fail(msg, el){ err.textContent = msg; err.hidden = false; if (el){ el.setAttribute('aria-invalid','true'); el.focus(); } }
+  function valid(){
+    const st = qsteps[cur], key = st.dataset.key;
+    if (DATA[key] && !picked(st)) { fail('Pick one of the options to continue.'); return false; }
+    if (key === 'suburb'){ const s = form.suburb; if (s.value.trim().length < 2){ fail('Add the suburb so Jessie knows where the job is.', s); return false; } }
+    if (key === 'contact'){
+      if (form.name.value.trim().length < 2){ fail('Add your name.', form.name); return false; }
+      if (form.phone.value.replace(/\D/g,'').length < 8){ fail('Add a phone number Jessie can call you on.', form.phone); return false; }
+      const em = form.email.value.trim();
+      if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ fail('Check the email address, or leave it empty.', form.email); return false; }
+    }
+    return true;
+  }
+  form.addEventListener('change', e => {
+    const t = e.target; if (t.type !== 'radio') return;
+    setT(t.name, t.value); err.hidden = true;
+    const st = qsteps[cur];
+    if (st.contains(t) && cur < N - 1) setTimeout(() => { if (qsteps[cur] === st && picked(st)) { cur++; show(true); } }, 350);
+  });
+  form.addEventListener('input', e => { e.target.removeAttribute('aria-invalid'); if (e.target.name === 'suburb') setT('suburb', e.target.value.trim()); });
+  back.addEventListener('click', () => { if (cur > 0){ cur--; show(true); } });
+  form.addEventListener('submit', e => { e.preventDefault(); if (!valid()) return; if (cur < N - 1){ cur++; show(true); } else send(); });
+
+  // "Get a quote" on a service tile pre-selects that service
+  document.querySelectorAll('[data-pick]').forEach(a => a.addEventListener('click', () => {
+    const r = form.querySelector(`input[name=service][value="${a.dataset.pick}"]`);
+    if (r){ r.checked = true; setT('service', r.value); cur = 1; show(false); }
+  }));
+
+  function send(){
+    if (form.website.value.trim()) return;
+    const v = k => (form.querySelector(`input[name=${k}]:checked`) || {}).value || '-';
+    const body = [
+      'Name: ' + form.name.value.trim(),
+      'Phone: ' + form.phone.value.trim(),
+      'Email: ' + (form.email.value.trim() || 'Not given'),
+      'Service: ' + v('service'), 'Job: ' + v('job'), 'When: ' + v('when'), 'Property: ' + v('property'),
+      'Suburb: ' + form.suburb.value.trim(), '', 'Details:', form.msg.value.trim() || '-'
+    ].join('\n');
+    const first = form.name.value.trim().split(' ')[0];
+    if (first) document.getElementById('done-t').textContent = `Thanks ${first}, your quote request is ready`;
+    drive(1); document.getElementById('spct').textContent = '100%';
+    qcard.classList.add('is-done');
+    const dn = document.getElementById('done'); dn.hidden = false; dn.focus({preventScroll:true});
+    if (qcard.getBoundingClientRect().top < 0) qcard.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+    location.href = `mailto:pataplumbing@gmail.com?subject=${encodeURIComponent('Quote request: ' + v('service') + ', ' + form.suburb.value.trim())}&body=${encodeURIComponent(body)}`;
+  }
+  show(false);
+  addEventListener('resize', () => drive(cur / N));
 })();
 </script>
 </body>
